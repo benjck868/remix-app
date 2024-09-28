@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 
 export default function route() {
   return (
@@ -37,9 +38,9 @@ export default function route() {
                 </div>
             </form>
             <div className="mt-6 text-center">
-                <p className="text-gray-500">Don't have an account? <a href="/auth/signup"
+                <p className="text-gray-500">Don't have an account? <Link to="/auth/signup"
                                                                         className="text-indigo-500 hover:text-indigo-700 font-medium">Sign
-                    Up</a></p>
+                    Up</Link></p>
             </div>
         </div>
     </div>

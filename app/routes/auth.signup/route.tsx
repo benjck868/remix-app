@@ -1,5 +1,5 @@
 import { ActionFunctionArgs } from '@remix-run/node'
-import { Form, useActionData, useSubmit } from '@remix-run/react'
+import { Form, Link, useActionData, useSubmit } from '@remix-run/react'
 import { useFormik } from 'formik'
 import { useEffect } from 'react'
 import { z } from 'zod'
@@ -101,7 +101,7 @@ export default function route() {
         </div>
         </Form>
         <div className="mt-4 text-center">
-            <p className="text-gray-500">Already have an account? <a href="/auth/signin" className="text-indigo-500 hover:text-indigo-700 font-medium">Sign In</a></p>
+            <p className="text-gray-500">Already have an account? <Link to="/auth/signin" className="text-indigo-500 hover:text-indigo-700 font-medium">Sign In</Link></p>
         </div>
     </div>
   )
