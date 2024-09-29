@@ -47,11 +47,9 @@ export async function action({request}:ActionFunctionArgs){
         return user
     }
     catch(e){
-        
+        throw e
     }
-    finally{
-
-    }
+    
 }
 
 export default function route() {
